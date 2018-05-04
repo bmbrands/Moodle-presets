@@ -1,0 +1,521 @@
+// Sandstone 4.0.0
+// Bootswatch
+
+//
+// Color system
+//
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #F8F5F0 !default;
+$gray-300: #DFD7CA !default;
+$gray-400: #ced4da !default;
+$gray-500: #98978B !default;
+$gray-600: #8E8C84 !default;
+$gray-700: #495057 !default;
+$gray-800: #3E3F3A !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #325D88 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #d9534f !default;
+$orange:  #F47C3C !default;
+$yellow:  #ffc107 !default;
+$green:   #93C54B !default;
+$teal:    #20c997 !default;
+$cyan:    #29ABE0 !default;
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         $gray-200 !default;
+$dark:          $gray-800 !default;
+
+// Body
+
+$body-color:                $gray-800 !default;
+
+// Links
+
+$link-color:                $success !default;
+
+// Fonts
+
+$font-family-sans-serif:      "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$font-size-base:              0.875rem !default;
+
+$headings-font-weight:        400 !default;
+
+// Dropdowns
+
+$dropdown-link-color:               $gray-600 !default;
+$dropdown-link-hover-color:         $dropdown-link-color !default;
+$dropdown-link-hover-bg:            $gray-200 !default;
+
+$dropdown-link-active-color:        $dropdown-link-color !default;
+$dropdown-link-active-bg:           $dropdown-link-hover-bg !default;
+
+// Navs
+
+$nav-link-padding-x:                0.9rem !default;
+$nav-link-disabled-color:           $gray-300 !default;
+
+$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-link-hover-border-color:  $gray-300 !default;
+$nav-tabs-link-active-bg:           $white !default;
+
+$nav-pills-link-active-color:       $gray-600 !default;
+$nav-pills-link-active-bg:          $gray-200 !default;
+
+// Navbar
+
+$navbar-dark-hover-color:           $white !default;
+
+$navbar-light-hover-color:          $black !default;
+$navbar-light-active-color:         $black !default;
+
+// Pagination
+
+$pagination-color:                  $gray-600 !default;
+$pagination-bg:                     $gray-200 !default;
+$pagination-border-color:           $gray-300 !default;
+
+$pagination-hover-color:            $pagination-color !default;
+
+$pagination-active-color:           $pagination-color !default;
+$pagination-active-bg:              $gray-300 !default;
+$pagination-active-border-color:    $gray-300 !default;
+
+$pagination-disabled-color:         $gray-300 !default;
+$pagination-disabled-bg:            $gray-200 !default;
+$pagination-disabled-border-color:  $pagination-border-color !default;
+
+// Cards
+
+$card-border-color:                 rgba($gray-300, .75) !default;
+$card-cap-bg:                       rgba($gray-200, .25) !default;
+
+// Popovers
+
+$popover-header-bg:                 $gray-200 !default;
+
+// Modals
+
+$modal-content-border-color:        $gray-300 !default;
+
+$modal-header-border-color:         $modal-content-border-color !default;
+
+// Progress bars
+
+$progress-bg:                       $gray-300 !default;
+$progress-border-radius:            10px !default;
+$progress-bar-color:                $primary !default;
+
+// List group
+
+$list-group-border-color:           $gray-300 !default;
+
+$list-group-hover-bg:               $gray-200 !default;
+$list-group-active-color:           $body-color !default;
+$list-group-active-bg:              $gray-200 !default;
+$list-group-active-border-color:    $gray-300 !default;
+
+$list-group-disabled-color:         $gray-500 !default;
+$list-group-disabled-bg:            $white !default;
+
+$list-group-action-color:           $list-group-active-color !default;
+
+$list-group-action-active-color:    $list-group-active-color !default;
+$list-group-action-active-bg:       $gray-300 !default;
+
+// Close
+
+$close-text-shadow:                 none !default;
+
+
+// Import FontAwesome.
+@import "fontawesome";
+
+// Import All of Bootstrap
+@import "bootstrap";
+
+// Import Core moodle CSS
+@import "moodle";
+// Sandstone 4.0.0
+// Bootswatch
+
+
+// Variables ===================================================================
+
+// $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:400,500,700" !default;
+// @import url($web-font-path);
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+// Navbar ======================================================================
+
+.bg-primary {
+  background-color: $dark !important;
+}
+
+.bg-dark {
+  background-color: $secondary !important;
+}
+
+.bg-light {
+  background-color: $gray-200 !important;
+}
+
+.sandstone {
+  font-size: 11px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar {
+  .nav-link {
+    @extend .sandstone;
+  }
+
+  &-form input,
+  &-form .form-control {
+    border: none;
+  }
+}
+
+// Buttons =====================================================================
+
+.btn {
+  @extend .sandstone;
+
+  &:hover {
+    border-color: transparent;
+  }
+
+  &-success,
+  &-warning {
+    color: $white;
+  }
+}
+
+// Typography ==================================================================
+
+// Tables ======================================================================
+
+.table {
+  .thead-dark th {
+    background-color: $dark;
+  }
+}
+
+// Forms =======================================================================
+
+input,
+.form-control {
+  @include box-shadow(none);
+
+  &:focus {
+    @include box-shadow(none);
+  }
+}
+
+// Navs ========================================================================
+
+.nav-tabs {
+  .nav-link {
+    @extend .sandstone;
+    background-color: $gray-200;
+    border-color: $gray-300;
+  }
+
+  .nav-link,
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $gray-600;
+  }
+
+  .nav-link.disabled,
+  .nav-link.disabled:hover,
+  .nav-link.disabled:focus {
+    background-color: $gray-200;
+    border-color: $gray-300;
+    color: $nav-link-disabled-color;
+  }
+}
+
+.nav-pills {
+  .nav-link {
+    @extend .sandstone;
+    border: 1px solid transparent;
+    color: $gray-600;
+  }
+
+  .nav-link.active,
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: $gray-200;
+    border-color: $gray-300;
+  }
+
+  .nav-link.disabled,
+  .nav-link.disabled:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $gray-300;
+  }
+}
+
+
+.breadcrumb {
+  @extend .sandstone;
+  border: 1px solid $gray-300;
+}
+
+.pagination {
+  @extend .sandstone;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.dropdown-menu {
+  .dropdown-item {
+    @extend .sandstone;
+  }
+}
+
+// Indicators ==================================================================
+
+.alert {
+  color: #fff;
+
+  a,
+  .alert-link {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &-success {
+    &, > th, > td {
+      background-color: $success;
+    }
+  }
+
+  &-info {
+    &, > th, > td {
+      background-color: $info;
+    }
+  }
+
+  &-danger {
+    &, > th, > td {
+      background-color: $danger;
+    }
+  }
+
+  &-warning {
+    &, > th, > td {
+      background-color: $warning;
+    }
+  }
+}
+
+.badge {
+
+  &-success,
+  &-warning {
+    color: $white;
+  }
+}
+
+.tooltip {
+  @extend .sandstone;
+}
+
+.close {
+  color: $gray-300;
+  opacity: 1;
+
+  &:hover {
+    color: darken($gray-300, 20%);
+  }
+}
+
+// Progress bars ===============================================================
+
+// Containers ==================================================================
